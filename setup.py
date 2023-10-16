@@ -18,13 +18,12 @@ import os
 import sys
 
 from setuptools import find_packages, setup
+from version import get_version
 
 py_version = sys.version_info[:2]
 
 if py_version < (3, 8):
     raise RuntimeError("Errbot requires Python 3.8 or later")
-
-VERSION_FILE = os.path.join("errbot", "version.py")
 
 deps = [
     "webtest==3.0.0",
@@ -48,18 +47,6 @@ if py_version < (3, 9):
 src_root = os.curdir
 
 
-def read_version():
-    """
-    Read directly the errbot/version.py and gives the version without loading Errbot.
-    :return: errbot.version.VERSION
-    """
-
-    variables = {}
-    with open(VERSION_FILE) as f:
-        exec(compile(f.read(), "version.py", "exec"), variables)
-    return variables["VERSION"]
-
-
 def read(fname, encoding="ascii"):
     return open(
         os.path.join(os.path.dirname(__file__), fname), "r", encoding=encoding
@@ -68,14 +55,9 @@ def read(fname, encoding="ascii"):
 
 if __name__ == "__main__":
 
-    VERSION = read_version()
-
     args = set(sys.argv)
 
     changes = read("CHANGES.rst", "utf8")
-
-    if changes.find(VERSION) == -1:
-        raise Exception("You forgot to put a release note in CHANGES.rst ?!")
 
     if args & {"bdist", "bdist_dumb", "bdist_rpm", "bdist_wininst", "bdist_msi"}:
         raise Exception("err doesn't support binary distributions")
@@ -84,7 +66,7 @@ if __name__ == "__main__":
 
     setup(
         name="errbot-hl",
-        version=VERSION,
+        version=get_version(),
         packages=packages,
         entry_points={
             "console_scripts": [
