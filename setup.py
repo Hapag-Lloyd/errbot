@@ -18,7 +18,6 @@ import os
 import sys
 
 from setuptools import find_packages, setup
-from version import get_version
 
 py_version = sys.version_info[:2]
 
@@ -57,8 +56,6 @@ if __name__ == "__main__":
 
     args = set(sys.argv)
 
-    changes = read("CHANGES.rst", "utf8")
-
     if args & {"bdist", "bdist_dumb", "bdist_rpm", "bdist_wininst", "bdist_msi"}:
         raise Exception("err doesn't support binary distributions")
 
@@ -66,7 +63,7 @@ if __name__ == "__main__":
 
     setup(
         name="errbot-hl",
-        version=get_version(),
+        version=os.getenv('RELEASE_VERSION'),
         packages=packages,
         entry_points={
             "console_scripts": [
