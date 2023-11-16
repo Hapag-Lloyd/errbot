@@ -22,5 +22,5 @@ jobs:
         image: image-name
         registry: ghcr.io
         githubOrg: override-org # optional
-        username: ${{ secrets.GHCR_USERNAME }}
+        username: ${{ github.actor }}
         password: ${{ secrets.GHCR_TOKEN }}
