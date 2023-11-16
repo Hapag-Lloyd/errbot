@@ -24,6 +24,8 @@ py_version = sys.version_info[:2]
 if py_version < (3, 8):
     raise RuntimeError("Errbot requires Python 3.8 or later")
 
+VERSION_FILE = os.path.join("errbot", "version.py")
+
 deps = [
     "webtest==3.0.0",
     "setuptools==68.1.2",
@@ -46,6 +48,18 @@ if py_version < (3, 9):
 src_root = os.curdir
 
 
+def read_version():
+    """
+    Read directly the errbot/version.py and gives the version without loading Errbot.
+    :return: errbot.version.VERSION
+    """
+
+    variables = {}
+    with open(VERSION_FILE) as f:
+        exec(compile(f.read(), "version.py", "exec"), variables)
+    return variables["VERSION"]
+
+
 def read(fname, encoding="ascii"):
     return open(
         os.path.join(os.path.dirname(__file__), fname), "r", encoding=encoding
@@ -54,7 +68,14 @@ def read(fname, encoding="ascii"):
 
 if __name__ == "__main__":
 
+    VERSION = read_version()
+
     args = set(sys.argv)
+
+    changes = read("CHANGES.rst", "utf8")
+
+    if changes.find(VERSION) == -1:
+        raise Exception("You forgot to put a release note in CHANGES.rst ?!")
 
     if args & {"bdist", "bdist_dumb", "bdist_rpm", "bdist_wininst", "bdist_msi"}:
         raise Exception("err doesn't support binary distributions")
@@ -62,8 +83,8 @@ if __name__ == "__main__":
     packages = find_packages(src_root, include=["errbot", "errbot.*"])
 
     setup(
-        name="errbot-hl",
-        version=os.getenv('RELEASE_VERSION'),
+        name="errbot",
+        version=VERSION,
         packages=packages,
         entry_points={
             "console_scripts": [
@@ -116,7 +137,7 @@ if __name__ == "__main__":
         author_email="info@errbot.io",
         description="Errbot is a chatbot designed to be simple to extend with plugins written in Python.",
         long_description_content_type="text/x-rst",
-        long_description="".join([read("README.rst")]),
+        long_description="".join([read("README.rst"), "\n\n", changes]),
         license="GPL",
         keywords="xmpp irc slack hipchat gitter tox chatbot bot plugin chatops",
         url="http://errbot.io/",
