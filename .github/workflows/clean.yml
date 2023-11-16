@@ -15,4 +15,4 @@ jobs:
           package-name: errbot
           package-type: container
           # do not delete releases
-          ignore-versions: 'v\d+\.\d+\.\d+'
+          ignore-versions: '^\d+\.\d+\.\d+$'
