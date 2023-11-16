@@ -19,7 +19,7 @@ jobs:
     - name: build and push image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: ghcr.io/Hapag-Lloyd/errbot
+        image: errbot
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GHCR_TOKEN }}
