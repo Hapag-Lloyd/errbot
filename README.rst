@@ -26,7 +26,7 @@ changes often. The base for this fork was version 6.1.9 (commit: 7609f6c) from J
 7.0.0 and contains all unreleased changes up to commit 0080eff1324930207f021f55674d5240abae172d from 2023-10-30.
 
 - Docker image: `ghcr.io/hapag-lloyd/errbot-hl <https://github.com/Hapag-Lloyd/errbot/pkgs/container/errbot>`__
-- PyPi package: `errbot-hl <https://https://pypi.org/project/errbot-hl/>`__
+- PyPi package: `errbot-hl <https://pypi.org/project/errbot-hl/>`__
 
 
 Errbot
