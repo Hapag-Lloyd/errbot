@@ -8,14 +8,25 @@ WORKDIR /wheel
 COPY . .
 RUN pip wheel --wheel-dir=/wheel wheel . .[${INSTALL_EXTRAS}]
 
-FROM python:3.9-slim
+FROM python:3.9-slim as base
 ARG INSTALL_EXTRAS
 
-RUN --mount=from=build,source=/wheel,target=/wheel \
-    pip install --no-cache-dir --no-index --find-links /wheel \
-    errbot errbot[${INSTALL_EXTRAS}]
+COPY --from=build /wheel /wheel
 
-RUN useradd --create-home --shell /bin/bash errbot
+RUN apt update && \
+    apt install -y git && \
+    cd /wheel && \
+    pip3 -vv install --no-cache-dir --no-index --find-links /wheel \
+    errbot-hl errbot-hl[${INSTALL_EXTRAS}] && \
+    rm -rf /wheel /var/lib/apt/lists/*
+
+RUN useradd -m errbot
+
+FROM base
+EXPOSE 3141 3142
+VOLUME /home/errbot
+WORKDIR /home/errbot
+
 USER errbot
 WORKDIR /home/errbot
 
