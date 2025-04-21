@@ -28,7 +28,7 @@ if py_version < (3, 9):
 VERSION_FILE = os.path.join("errbot", "version.py")
 
 deps = [
-    "webtest==3.0.0",
+    "webtest==3.0.4",
     "setuptools==75.7.0",
     "flask==2.3.3",
     "requests==2.32.3",
