@@ -121,8 +121,8 @@ if __name__ == "__main__":
             ],
             "XMPP": [
                 "slixmpp==1.8.4",
-                "pyasn1==0.5.0",
-                "pyasn1-modules==0.3.0",
+                "pyasn1==0.6.1",
+                "pyasn1-modules==0.4.2",
             ],
             ':sys_platform!="win32"': ["daemonize==2.5.0"],
         },
