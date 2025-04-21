@@ -1,5 +1,18 @@
 # Changelog
 
+## [8.0.1](https://github.com/Hapag-Lloyd/errbot/compare/8.0.0...8.0.1) (2025-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ansi to v0.3.7 ([#57](https://github.com/Hapag-Lloyd/errbot/issues/57)) ([1ebd4e5](https://github.com/Hapag-Lloyd/errbot/commit/1ebd4e5c2e0ae70378bb5cabe73a2cc69d339491))
+* **deps:** update dependency colorlog to v6.9.0 ([#61](https://github.com/Hapag-Lloyd/errbot/issues/61)) ([7965e5c](https://github.com/Hapag-Lloyd/errbot/commit/7965e5c80f80a273a3bbf41fb142f0a8dbbb8447))
+* **deps:** update dependency dulwich to v0.22.8 ([#62](https://github.com/Hapag-Lloyd/errbot/issues/62)) ([a31b193](https://github.com/Hapag-Lloyd/errbot/commit/a31b193a190aac99a45ffecef3bf9ed9e2748b50))
+* **deps:** update dependency errbot-backend-slackv3 to v0.3.1 ([#63](https://github.com/Hapag-Lloyd/errbot/issues/63)) ([fbb907f](https://github.com/Hapag-Lloyd/errbot/commit/fbb907f08494b7ad296d3874f82dcce1c0742515))
+* **deps:** update dependency irc to v20.5.0 ([#64](https://github.com/Hapag-Lloyd/errbot/issues/64)) ([b7e1062](https://github.com/Hapag-Lloyd/errbot/commit/b7e10621cc6827f654c18017a7b8432b7e0c7283))
+* **deps:** update dependency jinja2 to v3.1.6 [security] ([#56](https://github.com/Hapag-Lloyd/errbot/issues/56)) ([106310e](https://github.com/Hapag-Lloyd/errbot/commit/106310ec91a4924b912488f591c08183b3876929))
+* **deps:** update dependency markdown to v3.8 ([#65](https://github.com/Hapag-Lloyd/errbot/issues/65)) ([607d087](https://github.com/Hapag-Lloyd/errbot/commit/607d087e0b4c4050d9a84ab4aa7d211d1fe7994e))
+
 ## [8.0.0](https://github.com/Hapag-Lloyd/errbot/compare/v7.0.1...8.0.0) (2025-04-21)
 
 
