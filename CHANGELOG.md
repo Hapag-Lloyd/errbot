@@ -1,5 +1,22 @@
 # Changelog
 
+## [8.0.0](https://github.com/Hapag-Lloyd/errbot/compare/v7.0.1...8.0.0) (2025-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* add workflows for release automation ([#38](https://github.com/Hapag-Lloyd/errbot/issues/38))
+
+### Bug Fixes
+
+* add workflows for release automation ([#38](https://github.com/Hapag-Lloyd/errbot/issues/38)) ([93ee796](https://github.com/Hapag-Lloyd/errbot/commit/93ee796431a0297cf66d97d290c5b8dbb19fed48))
+
+
+### Documentation
+
+* add unreleased section to CHANGES ([#1681](https://github.com/Hapag-Lloyd/errbot/issues/1681)) ([09701a9](https://github.com/Hapag-Lloyd/errbot/commit/09701a9bfef3292a9f1001339e1cd7360d96d046))
+* fix telegram install command ([#1697](https://github.com/Hapag-Lloyd/errbot/issues/1697)) ([a84940d](https://github.com/Hapag-Lloyd/errbot/commit/a84940d819bb50ec4d7ed06b5db5bbe383a82971))
+
 ## [7.0.1](https://github.com/Hapag-Lloyd/errbot/compare/7.0.0...7.0.1) (2025-04-21)
 
 
