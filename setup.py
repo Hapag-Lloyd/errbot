@@ -22,18 +22,18 @@ from setuptools import find_packages, setup
 
 py_version = sys.version_info[:2]
 
-if py_version < (3, 8):
-    raise RuntimeError("Errbot requires Python 3.8 or later")
+if py_version < (3, 9):
+    raise RuntimeError("Errbot requires Python 3.9 or later")
 
 VERSION_FILE = os.path.join("errbot", "version.py")
 
 deps = [
     "webtest==3.0.0",
-    "setuptools==68.1.2",
+    "setuptools==75.7.0",
     "flask==2.3.3",
-    "requests==2.31.0",
-    "jinja2==3.1.2",
-    "pyOpenSSL==23.2.0",
+    "requests==2.32.3",
+    "jinja2==3.1.5",
+    "pyOpenSSL==24.3.0",
     "colorlog==6.7.0",
     "markdown==3.4.4",
     "ansi==0.3.6",
@@ -42,9 +42,6 @@ deps = [
     "dulwich==0.21.5",  # python implementation of git
     "deepmerge==1.1.0",
 ]
-
-if py_version < (3, 9):
-    deps.append("graphlib-backport==1.0.3")
 
 src_root = os.curdir
 
@@ -117,15 +114,15 @@ if __name__ == "__main__":
                 "err-backend-mattermost==3.0.0",
             ],
             "IRC": [
-                "irc==20.0.0",
+                "irc==20.3.0",
             ],
             "telegram": [
-                "python-telegram-bot==13.10",
+                "python-telegram-bot==13.15",
             ],
             "XMPP": [
-                "slixmpp==1.7.1",
-                "pyasn1==0.4.8",
-                "pyasn1-modules==0.2.8",
+                "slixmpp==1.8.4",
+                "pyasn1==0.5.0",
+                "pyasn1-modules==0.3.0",
             ],
             ':sys_platform!="win32"': ["daemonize==2.5.0"],
         },

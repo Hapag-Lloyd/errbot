@@ -3,9 +3,8 @@ import inspect
 import logging
 import re
 import shlex
-import sys
 from functools import wraps
-from typing import Any, Callable, List, Optional, Tuple
+from typing import Any, Callable, Optional, Tuple
 
 from .backends.base import AWAY, DND, OFFLINE, ONLINE, Message  # noqa
 from .botplugin import (  # noqa
@@ -16,7 +15,7 @@ from .botplugin import (  # noqa
     ShlexArgParser,
     ValidationException,
 )
-from .core_plugins.wsview import WebView, route
+from .core_plugins.wsview import route
 from .flow import FLOW_END, BotFlow, Flow, FlowRoot
 
 __all__ = [
@@ -521,9 +520,9 @@ def webhook(
     if isinstance(args[0], str):  # first param is uri_rule.
         return lambda func: _tag_webhook(
             func,
-            args[0]
-            if args[0] == "/"
-            else args[0].rstrip("/"),  # trailing / is also be stripped on incoming.
+            (
+                args[0] if args[0] == "/" else args[0].rstrip("/")
+            ),  # trailing / is also be stripped on incoming.
             methods=methods,
             form_param=form_param,
             raw=raw,

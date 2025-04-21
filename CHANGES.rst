@@ -1,4 +1,26 @@
-v7.0.0
+v9.9.9 (unreleased)
+-------------------
+
+fixes:
+
+- docs: add unreleased section (#1681)
+- fix: check only activate plugins listed in CORE_PLUGINS (#1601)
+- chore: bump jinja to 3.1.3 (#1684)
+- chore: bump actions/setup-python version (#1686, #1700)
+- chore: bump actions/checkout version (#1696, #1704)
+- chore: optimize Dockerfile (#1679)
+- docs: fix telegram install command (#1697)
+- chore: add python versions to test (#1705)
+- chore: remove python 3.8 support (#1707)
+- chore: use ruff for formatting (#1706)
+- chore: bump setuptools to 75.7.0 (#1709)
+- chore: bump pyOpenSSL to 24.3.0 (#1710)
+- chore: bump jinja2 to 3.1.5 and requests to 2.32.0 (#1714)
+- Fix: situationally broken apropos command (#1711)
+- chore: bump requests to 2.32.3 (#1715)
+
+
+v6.2.0 (2024-01-01)
 -------------------
 
 breaking:
@@ -17,7 +39,7 @@ fixes:
 
 - docs: add unreleased section (#1576)
 - docs: update broken URL for Markdown Extra (#1572)
-- chore: bump actions/setup-python version (#1575, #1593, #1609, #1626, #1642, #1650, #1659)
+- chore: bump actions/setup-python version (#1575, #1593, #1609, #1626, #1642, #1650, #1659, #1674)
 - backend/telegram: fix missing imports (#1574)
 - chore: ci improvements (#1577, #1583)
 - chore: add docs build to ci (#1582)
@@ -42,6 +64,9 @@ fixes:
 - docs: add readthedocs yaml config (#1661)
 - fix: broken integration tests (#1668)
 - style: replace format() with f-strings (#1667)
+- migrate from external mock package to stdlib unittest.mock (#1673)
+- fix: import of Mapping from collections.abc (#1675)
+- backend: update irc, telegram and xmpp dependencies (#1655)
 
 
 v6.1.9 (2022-06-11)

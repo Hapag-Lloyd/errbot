@@ -17,12 +17,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.8, 3.9, "3.10", "3.11", "3.12"]
+        python-version: [3.9, "3.10", "3.11", "3.12", "3.13"]
 
     steps:
-    - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+    - uses: actions/checkout@v4.2.2
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4.7.1
+      uses: actions/setup-python@v5.2.0
       with:
         python-version: ${{ matrix.python-version }}
 
@@ -39,26 +39,21 @@ jobs:
         tox -e py
 
     - name: Check Distribution
-      if: ${{ matrix.python-version == '3.9' }}
+      if: ${{ matrix.python-version == '3.12' }}
       run: |
         tox -e dist-check
 
     - name: Codestyle
-      if: ${{ matrix.python-version == '3.9' }}
+      if: ${{ matrix.python-version == '3.12' }}
       run: |
         tox -e codestyle
 
-    - name: Lint - sort
-      if: ${{ matrix.python-version == '3.9' }}
-      run: |
-        tox -e sort
-
     - name: Security
-      if: ${{ matrix.python-version == '3.9' }}
+      if: ${{ matrix.python-version == '3.12' }}
       run: |
         tox -e security
 
     - name: Docs
-      if: ${{ matrix.python-version == '3.9' }}
+      if: ${{ matrix.python-version == '3.12' }}
       run: |
         tox -e docs
