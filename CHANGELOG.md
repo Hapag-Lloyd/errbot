@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.2](https://github.com/Hapag-Lloyd/errbot/compare/8.0.1...8.0.2) (2025-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pyasn1 to v0.6.1 ([#66](https://github.com/Hapag-Lloyd/errbot/issues/66)) ([7dd766f](https://github.com/Hapag-Lloyd/errbot/commit/7dd766fbff2c58b3f8f3b46f892c8179a1898378))
+
 ## [8.0.1](https://github.com/Hapag-Lloyd/errbot/compare/8.0.0...8.0.1) (2025-04-21)
 
 
