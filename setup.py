@@ -36,7 +36,7 @@ deps = [
     "pyOpenSSL==24.3.0",
     "colorlog==6.7.0",
     "markdown==3.4.4",
-    "ansi==0.3.6",
+    "ansi==0.3.7",
     "Pygments==2.16.1",
     "pygments-markdown-lexer==0.1.0.dev39",  # sytax coloring to debug md
     "dulwich==0.21.5",  # python implementation of git
