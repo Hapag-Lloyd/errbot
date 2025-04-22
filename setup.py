@@ -40,7 +40,7 @@ deps = [
     "Pygments==2.19.1",
     "pygments-markdown-lexer==0.1.0.dev39",  # sytax coloring to debug md
     "dulwich==0.22.8",  # python implementation of git
-    "deepmerge==1.1.1",
+    "deepmerge==2.0",
 ]
 
 src_root = os.curdir
