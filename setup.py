@@ -108,7 +108,7 @@ if __name__ == "__main__":
                 "errbot-backend-slackv3==0.3.1",
             ],
             "discord": [
-                "err-backend-discord==3.0.1",
+                "err-backend-discord==4.0.0",
             ],
             "mattermost": [
                 "err-backend-mattermost==3.0.0",
