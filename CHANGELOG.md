@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.4](https://github.com/Hapag-Lloyd/errbot/compare/8.0.3...8.0.4) (2025-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency flask to v3 ([#74](https://github.com/Hapag-Lloyd/errbot/issues/74)) ([404179b](https://github.com/Hapag-Lloyd/errbot/commit/404179baf8073ec0dc09522574f3795036ecb0ce))
+
 ## [8.0.3](https://github.com/Hapag-Lloyd/errbot/compare/8.0.2...8.0.3) (2025-04-22)
 
 
