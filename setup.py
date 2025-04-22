@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 "irc==20.5.0",
             ],
             "telegram": [
-                "python-telegram-bot==13.15",
+                "python-telegram-bot==22.0",
             ],
             "XMPP": [
                 "slixmpp==1.10.0",
