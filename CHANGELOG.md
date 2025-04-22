@@ -1,5 +1,16 @@
 # Changelog
 
+## [8.0.3](https://github.com/Hapag-Lloyd/errbot/compare/8.0.2...8.0.3) (2025-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency deepmerge to v2 ([#72](https://github.com/Hapag-Lloyd/errbot/issues/72)) ([eefee8f](https://github.com/Hapag-Lloyd/errbot/commit/eefee8fcc12c7c1a6b20455db77993986b14003c))
+* **deps:** update dependency err-backend-discord to v4 ([#73](https://github.com/Hapag-Lloyd/errbot/issues/73)) ([0cebeb2](https://github.com/Hapag-Lloyd/errbot/commit/0cebeb2b3756cf631f8f510d231076dd18efe840))
+* **deps:** update dependency pyopenssl to v25 ([#75](https://github.com/Hapag-Lloyd/errbot/issues/75)) ([3901949](https://github.com/Hapag-Lloyd/errbot/commit/3901949de22d340b56da4e225098b8ea354cbff7))
+* **deps:** update dependency python-telegram-bot to v22 ([#76](https://github.com/Hapag-Lloyd/errbot/issues/76)) ([858fd7d](https://github.com/Hapag-Lloyd/errbot/commit/858fd7d4bf574c9b5ba2b3de38633803876c818b))
+* **deps:** update dependency slixmpp to v1.10.0 ([#70](https://github.com/Hapag-Lloyd/errbot/issues/70)) ([f7d26f3](https://github.com/Hapag-Lloyd/errbot/commit/f7d26f34ee6f5df17d5071a34e20f23f42a65ce7))
+
 ## [8.0.2](https://github.com/Hapag-Lloyd/errbot/compare/8.0.1...8.0.2) (2025-04-21)
 
 
