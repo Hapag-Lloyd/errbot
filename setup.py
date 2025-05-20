@@ -30,10 +30,10 @@ VERSION_FILE = os.path.join("errbot", "version.py")
 deps = [
     "webtest==3.0.4",
     "setuptools==80.7.1",
-    "flask==3.1.0",
+    "flask==3.1.1",
     "requests==2.32.3",
     "jinja2==3.1.6",
-    "pyOpenSSL==25.0.0",
+    "pyOpenSSL==25.1.0",
     "colorlog==6.9.0",
     "markdown==3.8",
     "ansi==0.3.7",
@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 "irc==20.5.0",
             ],
             "telegram": [
-                "python-telegram-bot==22.0",
+                "python-telegram-bot==22.1",
             ],
             "XMPP": [
                 "slixmpp==1.10.0",
