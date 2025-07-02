@@ -1,5 +1,22 @@
 # Changelog
 
+## [8.0.5](https://github.com/Hapag-Lloyd/errbot/compare/8.0.4...8.0.5) (2025-07-02)
+
+
+### Bug Fixes
+
+* add extra_plugin_dir support to FullStackTest ([#1726](https://github.com/Hapag-Lloyd/errbot/issues/1726)) ([fea0d16](https://github.com/Hapag-Lloyd/errbot/commit/fea0d1667916bf0a1d95ad8d8eafcd44b0417015))
+* importlib refactor ([#1733](https://github.com/Hapag-Lloyd/errbot/issues/1733)) ([cb6b890](https://github.com/Hapag-Lloyd/errbot/commit/cb6b89051dc60b0452b6914d24d6fec5408573a0))
+* missing py 3.13 version in tox ([#1731](https://github.com/Hapag-Lloyd/errbot/issues/1731)) ([96f922a](https://github.com/Hapag-Lloyd/errbot/commit/96f922a41b6444924ade012ab4b1a3aabd1b06b1))
+* Newlines replaced with spaces in botcmd args ([#1716](https://github.com/Hapag-Lloyd/errbot/issues/1716)) ([#1717](https://github.com/Hapag-Lloyd/errbot/issues/1717)) ([394b8b4](https://github.com/Hapag-Lloyd/errbot/commit/394b8b4b2d40937d1840e49a15e7f9a6e8734d34))
+* update message that plugin config must be a single line ([#1727](https://github.com/Hapag-Lloyd/errbot/issues/1727)) ([a5f003c](https://github.com/Hapag-Lloyd/errbot/commit/a5f003c1906f9515edd039fdc0513fc6995f72cd))
+* update tar extract filter ([#1730](https://github.com/Hapag-Lloyd/errbot/issues/1730)) ([ab34e44](https://github.com/Hapag-Lloyd/errbot/commit/ab34e44aab10585263f807202d51750cf6283945))
+
+
+### Documentation
+
+* add example on how to use threaded replies ([#1728](https://github.com/Hapag-Lloyd/errbot/issues/1728)) ([cc51138](https://github.com/Hapag-Lloyd/errbot/commit/cc51138cd29daa19559fa8c436e1d247fe1cb20d))
+
 ## [8.0.4](https://github.com/Hapag-Lloyd/errbot/compare/8.0.3...8.0.4) (2025-04-22)
 
 
