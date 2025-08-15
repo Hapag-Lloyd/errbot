@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.6](https://github.com/Hapag-Lloyd/errbot/compare/8.0.5...8.0.6) (2025-08-15)
+
+
+### Bug Fixes
+
+* release ([#102](https://github.com/Hapag-Lloyd/errbot/issues/102)) ([298b291](https://github.com/Hapag-Lloyd/errbot/commit/298b291b27cdc833cf1df743b7ddaa6daa1576b2))
+
 ## [8.0.5](https://github.com/Hapag-Lloyd/errbot/compare/8.0.4...8.0.5) (2025-07-02)
 
 
