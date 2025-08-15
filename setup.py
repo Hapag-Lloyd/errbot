@@ -39,7 +39,7 @@ deps = [
     "ansi==0.3.7",
     "Pygments==2.19.2",
     "pygments-markdown-lexer==0.1.0.dev39",  # sytax coloring to debug md
-    "dulwich==0.23.1",  # python implementation of git
+    "dulwich==0.24.1",  # python implementation of git
     "deepmerge==2.0",
     "legacy-cgi==2.6.3; python_version >= '3.12'",  # stopgap fix for webtest after cgi dropped from stdlib
 ]
