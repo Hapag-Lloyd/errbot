@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.7](https://github.com/Hapag-Lloyd/errbot/compare/8.0.6...8.0.7) (2025-08-18)
+
+
+### Reverts
+
+* "chore: include legacy-cgi to deps" ([#104](https://github.com/Hapag-Lloyd/errbot/issues/104)) ([9436fe2](https://github.com/Hapag-Lloyd/errbot/commit/9436fe2f237567a1d55102e7e8dc4f45e73b9245))
+
 ## [8.0.6](https://github.com/Hapag-Lloyd/errbot/compare/8.0.5...8.0.6) (2025-08-15)
 
 
