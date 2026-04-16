@@ -105,7 +105,7 @@ if __name__ == "__main__":
         },
         extras_require={
             "slack": [
-                "errbot-backend-slackv3==0.3.1",
+                "errbot-backend-slackv3==0.3.2",
             ],
             "discord": [
                 "err-backend-discord==4.0.0",
