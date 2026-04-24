@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout branch
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4 # ratchet:actions/checkout@v3
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6 # ratchet:actions/checkout@v3
       - name: Set release version
         id: set_release_version
         env:
@@ -22,6 +22,6 @@ jobs:
           file=$(find . -name "version.py")
           version_number=${HEAD_COMMIT_TITLE##* }
           sed -i "s/^VERSION .*$/VERSION = \"$version_number\"/" $file
-      - uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5
+      - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
         with:
           commit_message: set release version
