@@ -39,7 +39,7 @@ deps = [
     "ansi==0.3.7",
     "Pygments==2.20.0",
     "pygments-markdown-lexer==0.1.0.dev39",  # sytax coloring to debug md
-    "dulwich==0.23.1",  # python implementation of git
+    "dulwich==0.25.2",  # python implementation of git
     "deepmerge==2.0",
 ]
 
