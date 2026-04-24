@@ -15,10 +15,10 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v4.2.2
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
     - name: build and push image
-      uses: mr-smithers-excellent/docker-build-push@f8f78238603ab7953b961d99dc93ef0701295c60 # v6
+      uses: mr-smithers-excellent/docker-build-push@ecb733becfd984bea20b92a4a6af55d5926fa38b # v6
       with:
         image: errbot-hl
         registry: ghcr.io
