@@ -35,7 +35,7 @@ deps = [
     "jinja2==3.1.6",
     "pyOpenSSL==26.0.0",
     "colorlog==6.9.0",
-    "markdown==3.8.2",
+    "markdown==3.10.2",
     "ansi==0.3.7",
     "Pygments==2.20.0",
     "pygments-markdown-lexer==0.1.0.dev39",  # sytax coloring to debug md
