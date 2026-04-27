@@ -31,7 +31,7 @@ deps = [
     "webtest==3.0.7",
     "setuptools==80.9.0",
     "flask==3.1.3",
-    "requests==2.32.4",
+    "requests==2.33.0",
     "jinja2==3.1.6",
     "pyOpenSSL==26.0.0",
     "colorlog==6.9.0",
